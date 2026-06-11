@@ -1,0 +1,12 @@
+# robots.txt — Onedays Plumbing Services
+# https://www.onedaysplumbing.co.za/
+
+User-agent: *
+Allow: /
+
+# Block irrelevant crawler paths
+Disallow: /thank-you
+Disallow: /404
+
+# Sitemap location
+Sitemap: https://www.onedaysplumbing.co.za/sitemap.xml
