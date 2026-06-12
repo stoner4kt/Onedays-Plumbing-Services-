@@ -3,41 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms and Conditions — Onedays Plumbing Services</title>
-  <meta name="description" content="Terms and Conditions for Onedays Plumbing Services — service terms, payment, guarantees, and liability." />
+  <title>Terms &amp; Conditions | Onedays Plumbing Services</title>
+  <meta name="description" content="Terms and Conditions for Onedays Plumbing Services Cape Town — service terms, payment, workmanship guarantee, and liability." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.onedaysplumbing.co.za/terms" />
+  <link rel="canonical" href="https://www.onedaysplumbingservices.co.za/terms" />
   <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brandDark:'#080C14', brandSurface:'#0E1420', brandCard:'#131926',
-            brandBorder:'#1E2840', brandAccent:'#00C8FF', brandMuted:'#8A9AB8', brandText:'#D6E4F7',
-          },
-          fontFamily: { display:['Inter','system-ui','sans-serif'], body:['Inter','system-ui','sans-serif'] },
-        },
-      },
-    };
+  <!-- BreadcrumbList JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.onedaysplumbingservices.co.za/"},
+      {"@type":"ListItem","position":2,"name":"Terms and Conditions","item":"https://www.onedaysplumbingservices.co.za/terms"}
+    ]
+  }
   </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{brandDark:'#080C14',brandSurface:'#0E1420',brandCard:'#131926',brandBorder:'#1E2840',brandAccent:'#00C8FF',brandMuted:'#8A9AB8',brandText:'#D6E4F7'},fontFamily:{display:['Inter','system-ui','sans-serif'],body:['Inter','system-ui','sans-serif']}}}};</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
     *,*::before,*::after{box-sizing:border-box;}
     html{background:#080C14;}
-    body{background:#080C14;color:#D6E4F7;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;}
+    body{background:#080C14;color:#D6E4F7;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:5rem;}
+    @media(min-width:769px){body{padding-bottom:0;}}
     .nav-glass{background:rgba(8,12,20,0.85);backdrop-filter:blur(16px);border-bottom:1px solid rgba(30,40,64,0.8);}
+    @supports not (backdrop-filter:blur(1px)){.nav-glass{background:rgba(8,12,20,0.98);}}
     .btn-primary{background:linear-gradient(135deg,#00C8FF 0%,#0099CC 100%);color:#080C14;font-weight:700;transition:all 0.2s ease;box-shadow:0 0 24px rgba(0,200,255,0.25);}
     .btn-primary:hover{box-shadow:0 0 40px rgba(0,200,255,0.45);transform:translateY(-1px);}
     .btn-secondary{background:transparent;color:#00C8FF;border:1px solid rgba(0,200,255,0.4);font-weight:600;transition:all 0.2s ease;}
     .glow-line{height:1px;background:linear-gradient(90deg,transparent 0%,#00C8FF 50%,transparent 100%);opacity:0.5;}
     .section-label{font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#00C8FF;}
     #mobile-menu{background:rgba(8,12,20,0.98);border-bottom:1px solid #1E2840;}
-    .prose-custom h2{font-size:1.25rem;font-weight:700;color:#D6E4F7;margin-top:2.5rem;margin-bottom:0.75rem;letter-spacing:-0.02em;}
+    .prose-custom h2{font-size:1.2rem;font-weight:700;color:#D6E4F7;margin-top:2.5rem;margin-bottom:0.75rem;letter-spacing:-0.02em;}
     .prose-custom p{color:#8A9AB8;font-size:0.9375rem;line-height:1.75;margin-bottom:1rem;}
     .prose-custom ul{list-style:disc;padding-left:1.5rem;color:#8A9AB8;font-size:0.9375rem;line-height:1.75;margin-bottom:1rem;}
     .prose-custom li{margin-bottom:0.375rem;}
@@ -45,6 +47,10 @@
     .prose-custom a:hover{opacity:0.8;}
     .whatsapp-pulse{animation:waPulse 2.5s ease-in-out infinite;}
     @keyframes waPulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.5);}50%{box-shadow:0 0 0 10px rgba(37,211,102,0);}}
+    .map-container{position:relative;width:100%;aspect-ratio:16/9;min-height:220px;overflow:hidden;}
+    .map-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
+    @supports not (aspect-ratio:16/9){.map-container{padding-bottom:56.25%;height:0;aspect-ratio:auto;}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-pulse,.btn-primary{transition:none!important;animation:none!important;}}
   </style>
 </head>
 <body class="min-h-screen">
@@ -53,12 +59,12 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <a href="index.html" class="flex items-center gap-3" aria-label="Onedays Plumbing Home">
-          <img src="assets/logo.jpg" alt="Onedays Plumbing Services logo" class="h-9 w-auto object-contain" />
+          <img src="assets/logo.jpg" alt="Onedays Plumbing Services Cape Town logo" class="h-9 w-auto object-contain" />
         </a>
         <div class="flex items-center gap-3">
-          <a href="tel:+27653270980" class="hidden sm:inline-flex items-center gap-2 btn-secondary px-4 py-2 rounded-lg text-sm">Call Now</a>
-          <a href="index.html#contact" class="btn-primary px-4 py-2 rounded-lg text-sm hidden md:inline-flex">Get a Free Quote</a>
-          <button id="menu-toggle" class="md:hidden p-2 rounded-lg text-brandMuted hover:text-brandAccent transition-colors" aria-label="Toggle menu" aria-expanded="false">
+          <a href="tel:+27653270980" class="hidden sm:inline-flex items-center gap-2 btn-secondary px-4 py-2 rounded-lg text-sm" style="min-height:44px;">Call Now</a>
+          <a href="index.html#contact" class="btn-primary px-4 py-2 rounded-lg text-sm hidden md:inline-flex" style="min-height:44px;">Get a Free Quote</a>
+          <button id="menu-toggle" class="md:hidden p-2 rounded-lg text-brandMuted hover:text-brandAccent transition-colors" aria-label="Toggle menu" aria-expanded="false" style="min-width:44px;min-height:44px;">
             <svg id="menu-icon-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
             <svg id="menu-icon-close" class="hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
           </button>
@@ -67,20 +73,28 @@
     </div>
     <div id="mobile-menu" class="hidden md:hidden">
       <nav class="flex flex-col px-4 py-4 gap-1">
-        <a href="index.html#services" class="px-3 py-2.5 rounded-lg text-brandMuted hover:text-brandAccent text-sm font-medium transition-colors">Services</a>
-        <a href="index.html#emergency" class="px-3 py-2.5 rounded-lg text-brandMuted hover:text-brandAccent text-sm font-medium transition-colors">24/7 Emergency</a>
-        <a href="faq.html" class="px-3 py-2.5 rounded-lg text-brandMuted hover:text-brandAccent text-sm font-medium transition-colors">FAQs</a>
-        <a href="index.html#contact" class="px-3 py-2.5 rounded-lg text-brandMuted hover:text-brandAccent text-sm font-medium transition-colors">Contact</a>
+        <a href="index.html#services" class="px-3 py-2.5 rounded-lg text-brandMuted hover:text-brandAccent text-sm font-medium transition-colors" style="min-height:44px;display:flex;align-items:center;">Services</a>
+        <a href="index.html#emergency" class="px-3 py-2.5 rounded-lg text-brandMuted hover:text-brandAccent text-sm font-medium transition-colors" style="min-height:44px;display:flex;align-items:center;">24/7 Emergency</a>
+        <a href="faq.html" class="px-3 py-2.5 rounded-lg text-brandMuted hover:text-brandAccent text-sm font-medium transition-colors" style="min-height:44px;display:flex;align-items:center;">FAQs</a>
+        <a href="index.html#contact" class="px-3 py-2.5 rounded-lg text-brandMuted hover:text-brandAccent text-sm font-medium transition-colors" style="min-height:44px;display:flex;align-items:center;">Contact</a>
         <div class="glow-line my-2"></div>
-        <a href="tel:+27653270980" class="btn-secondary px-4 py-2.5 rounded-lg text-sm text-center mt-1">Call: 065 327 0980</a>
+        <a href="tel:+27653270980" class="btn-secondary px-4 py-2.5 rounded-lg text-sm text-center mt-1" style="min-height:44px;display:flex;align-items:center;justify-content:center;">Call: 065 327 0980</a>
       </nav>
     </div>
   </header>
 
-  <main class="pt-24 pb-24">
+  <main class="pt-20 pb-24">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <!-- Disclaimer banner -->
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="mb-8 pt-6">
+        <ol class="flex items-center gap-2 text-xs text-brandMuted">
+          <li><a href="index.html" class="hover:text-brandAccent transition-colors">Home</a></li>
+          <li aria-hidden="true" class="text-brandBorder">/</li>
+          <li class="text-brandAccent font-medium" aria-current="page">Terms &amp; Conditions</li>
+        </ol>
+      </nav>
+
       <div class="mb-10 p-4 rounded-xl text-sm" style="background:rgba(0,200,255,0.07);border:1px solid rgba(0,200,255,0.2);color:#8A9AB8;">
         <strong style="color:#00C8FF;">Note:</strong> This document is a general template and should be reviewed by a qualified legal professional before publishing.
       </div>
@@ -88,47 +102,41 @@
       <p class="section-label mb-4">Legal</p>
       <h1 class="font-black text-brandText tracking-tight mb-3" style="font-size:clamp(2rem,4vw,2.75rem);letter-spacing:-0.04em;">Terms and Conditions</h1>
       <p style="color:#8A9AB8;font-size:0.875rem;margin-bottom:2.5rem;">Effective Date: 1 June 2025 &nbsp;·&nbsp; Last updated: 12 June 2026</p>
-
       <div class="glow-line mb-10"></div>
 
       <div class="prose-custom">
-
-        <p>Please read these Terms and Conditions carefully before using the Onedays Plumbing Services website or engaging our services. By using this website or requesting a quote, you agree to be bound by these terms.</p>
+        <p>Please read these Terms and Conditions carefully before using the Onedays Plumbing Services website or engaging our services. By using this website or requesting a quote, you agree to be bound by these terms. Onedays Plumbing Services is based at 38 12th Avenue, Florida, Ravensmead, 7504, Cape Town, Western Cape, South Africa.</p>
 
         <h2>1. General Website Use</h2>
-        <p>The information on this website is provided for general informational purposes only. It is subject to change without notice. While we make every effort to ensure accuracy, Onedays Plumbing Services makes no warranties regarding the completeness or suitability of the content for any particular purpose.</p>
-        <p>Submitting a quote request through our online form does not constitute a binding contract between you and Onedays Plumbing Services. A contract is only formed when we have confirmed your booking in writing and you have accepted a written quote.</p>
+        <p>The information on this website is provided for general informational purposes only. Submitting a quote request does not constitute a binding contract. A contract is only formed when we have confirmed your booking in writing and you have accepted a written quote.</p>
 
         <h2>2. Quotes and Estimates</h2>
-        <p>All quotes provided — whether verbally, via WhatsApp, or online — are estimates based on the information available at the time. Final pricing is confirmed in a written quote following an on-site assessment where required. No work will commence until a written quote has been accepted by the client.</p>
-        <p>Quotes are valid for 14 days from the date of issue, unless otherwise stated. We reserve the right to revise a quote if site conditions differ materially from what was described.</p>
+        <p>All quotes — whether verbal, via WhatsApp, or online — are estimates based on information available at the time. Final pricing is confirmed in a written quote following on-site assessment where required. No work commences until a written quote has been accepted by the client. Quotes are valid for 14 days from the date of issue.</p>
 
         <h2>3. Payment Terms</h2>
-        <p>Payment is due on completion of work, unless otherwise agreed in writing prior to commencement. For larger projects, a deposit may be required — this will be specified in your written quote.</p>
-        <p>We accept EFT (electronic bank transfer), cash, and card payments. Failure to pay on completion may result in the withholding of Certificates of Compliance (CoC) until payment is received.</p>
+        <p>Payment is due on completion of work unless otherwise agreed in writing. We accept EFT (electronic bank transfer), cash, and card payments. For larger projects, a deposit may be required as specified in your written quote. Certificates of Compliance (CoC) may be withheld until payment is received in full.</p>
 
         <h2>4. Workmanship Guarantee</h2>
-        <p>Onedays Plumbing Services provides a <strong style="color:#D6E4F7;">12-month workmanship guarantee</strong> on all work completed by our team. If a repair or installation we performed fails within 12 months of completion due to our workmanship or the parts we supplied, we will return and rectify it at no additional cost to you.</p>
-        <p>This guarantee:</p>
+        <p>Onedays Plumbing Services provides a <strong style="color:#D6E4F7;">12-month workmanship guarantee</strong> on all work completed across Cape Town and the greater Western Cape. If a repair or installation fails within 12 months due to our workmanship or supplied parts, we will rectify it at no additional cost. This guarantee:</p>
         <ul>
           <li>Applies only to workmanship and parts supplied by Onedays Plumbing Services</li>
-          <li>Does not cover damage caused by misuse, third-party interference, pre-existing conditions, or factors outside our control (e.g. water hammer, municipal pressure surges, tree root intrusion)</li>
+          <li>Does not cover damage caused by misuse, third-party interference, pre-existing conditions, or factors outside our control (e.g. municipal pressure surges, tree root intrusion)</li>
           <li>Does not cover normal wear and tear</li>
-          <li>Is subject to the client having settled all outstanding invoices</li>
+          <li>Is subject to all outstanding invoices being settled</li>
         </ul>
 
         <h2>5. Liability Limitations</h2>
-        <p>Onedays Plumbing Services will take all reasonable care in carrying out work at your property. However, we are not liable for:</p>
+        <p>Onedays Plumbing Services takes all reasonable care when working at your Cape Town property. We are not liable for:</p>
         <ul>
           <li>Pre-existing defects, substandard materials, or pipework installed by others</li>
-          <li>Damage caused by factors outside our control, including but not limited to: municipal supply issues, extreme weather events, acts of God</li>
-          <li>Loss of income, consequential loss, or indirect damages arising from any service delay or failure</li>
+          <li>Damage caused by factors outside our control (municipal supply issues, extreme weather, acts of God)</li>
+          <li>Loss of income, consequential loss, or indirect damages arising from service delays or failures</li>
           <li>Hidden or concealed defects that could not reasonably be identified during a standard assessment</li>
         </ul>
         <p>Our liability in any circumstance is limited to the value of the work performed under the relevant job.</p>
 
         <h2>6. Cancellation and Rescheduling</h2>
-        <p>We understand plans change. We ask that you provide at least <strong style="color:#D6E4F7;">24 hours' notice</strong> if you need to cancel or reschedule a non-emergency appointment. Late cancellations (less than 4 hours' notice) or no-shows may attract a call-out fee to cover travel and allocated time costs. Emergency call-out fees are non-refundable once a plumber has been dispatched.</p>
+        <p>We ask for at least <strong style="color:#D6E4F7;">24 hours' notice</strong> to cancel or reschedule a non-emergency appointment. Late cancellations (less than 4 hours' notice) or no-shows may attract a call-out fee. Emergency call-out fees are non-refundable once a plumber has been dispatched.</p>
 
         <h2>7. Client Responsibilities</h2>
         <p>You agree to:</p>
@@ -140,26 +148,53 @@
         </ul>
 
         <h2>8. Certificates of Compliance (CoC)</h2>
-        <p>Where a CoC is issued by Onedays Plumbing Services (for geyser or electrical installations), it certifies that the work carried out by us is compliant with the relevant regulations at the time of installation. It does not certify the condition of any other existing pipework, wiring, or systems on the property.</p>
+        <p>Where a CoC is issued by Onedays Plumbing Services for geyser or electrical installations, it certifies that the work carried out by us complies with relevant regulations at the time of installation. It does not certify the condition of any other existing pipework, wiring, or systems on the property.</p>
 
         <h2>9. Governing Law</h2>
-        <p>These Terms and Conditions are governed by the laws of the Republic of South Africa. Any disputes arising from the use of this website or the provision of services by Onedays Plumbing Services shall be subject to the jurisdiction of the South African courts.</p>
+        <p>These Terms and Conditions are governed by the laws of the Republic of South Africa. Any disputes shall be subject to the jurisdiction of the South African courts.</p>
 
         <h2>10. Contact Us</h2>
-        <p>For any questions about these Terms and Conditions, please contact us:</p>
+        <p>For any questions about these Terms and Conditions:</p>
         <ul>
           <li>Email: <a href="mailto:info@onedaysplumbing.co.za">info@onedaysplumbing.co.za</a></li>
           <li>Phone: <a href="tel:+27653270980">065 327 0980</a></li>
-          <li>Location: Cape Town, Western Cape, South Africa</li>
+          <li>Address: 38 12th Avenue, Florida, Ravensmead, 7504, Cape Town, Western Cape</li>
         </ul>
-
       </div>
-
     </div>
   </main>
 
   <footer style="background:#0B0F19;border-top:1px solid #1E2840;">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
+        <div>
+          <p class="text-brandText text-xs font-semibold tracking-widest uppercase mb-3">Contact &amp; Location</p>
+          <ul class="space-y-2 text-brandMuted text-sm">
+            <li><a href="tel:+27653270980" class="hover:text-brandAccent transition-colors">065 327 0980</a></li>
+            <li><a href="mailto:info@onedaysplumbing.co.za" class="hover:text-brandAccent transition-colors">info@onedaysplumbing.co.za</a></li>
+            <li><address class="not-italic leading-relaxed">38 12th Avenue, Florida, Ravensmead, 7504,<br/>Cape Town, Western Cape</address></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-brandText text-xs font-semibold tracking-widest uppercase mb-3">Follow Us</p>
+          <div class="flex gap-3">
+            <a href="https://wa.me/27653270980" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-9 h-9 rounded-lg flex items-center justify-center text-brandMuted hover:text-brandAccent transition-colors" style="border:1px solid #1E2840;min-width:44px;min-height:44px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.395 5.608L.057 23.552a.75.75 0 00.915.915l5.944-1.338A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.715 9.715 0 01-4.95-1.352l-.355-.21-3.532.795.81-3.442-.23-.366A9.714 9.714 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg></a>
+            <a href="https://www.facebook.com/share/1BZyE6L5D6/" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-lg flex items-center justify-center text-brandMuted hover:text-brandAccent transition-colors" style="border:1px solid #1E2840;min-width:44px;min-height:44px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://www.instagram.com/onedaymtetwa" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-lg flex items-center justify-center text-brandMuted hover:text-brandAccent transition-colors" style="border:1px solid #1E2840;min-width:44px;min-height:44px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="mb-8">
+        <div class="map-container rounded-2xl overflow-hidden" style="border:1px solid #1E2840;">
+          <iframe title="Onedays Plumbing Services location - 38 12th Avenue, Florida, Ravensmead, Cape Town" src="https://www.google.com/maps?q=38+12th+Avenue,+Florida,+Ravensmead,+7504,+Cape+Town,+South+Africa&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+        <div class="mt-3 text-center">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=38+12th+Avenue,+Florida,+Ravensmead,+7504,+Cape+Town,+South+Africa" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-brandAccent text-sm hover:opacity-80 transition-opacity font-medium" style="min-height:44px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Get Directions
+          </a>
+        </div>
+      </div>
       <div class="glow-line mb-8"></div>
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
         <p style="color:#8A9AB8;font-size:0.75rem;">&copy; <span id="footer-year"></span> Onedays Plumbing Services. All rights reserved.</p>
@@ -172,32 +207,15 @@
     </div>
   </footer>
 
-  <!-- Floating buttons -->
   <div class="fixed bottom-5 right-5 z-50 flex flex-col gap-3">
-    <a href="https://wa.me/27653270980" target="_blank" rel="noopener" class="w-14 h-14 rounded-full flex items-center justify-center whatsapp-pulse" style="background:#25D366;" aria-label="Chat on WhatsApp">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.395 5.608L.057 23.552a.75.75 0 00.915.915l5.944-1.338A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.715 9.715 0 01-4.95-1.352l-.355-.21-3.532.795.81-3.442-.23-.366A9.714 9.714 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
-    </a>
-    <a href="tel:+27653270980" class="w-14 h-14 rounded-full flex items-center justify-center btn-primary" aria-label="Call Onedays Plumbing">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#080C14" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.62 3.38 2 2 0 013.6 1.21h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.8a16 16 0 006.29 6.29l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-    </a>
+    <a href="https://wa.me/27653270980" target="_blank" rel="noopener" class="w-14 h-14 rounded-full flex items-center justify-center whatsapp-pulse" style="background:#25D366;" aria-label="Chat on WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.395 5.608L.057 23.552a.75.75 0 00.915.915l5.944-1.338A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.715 9.715 0 01-4.95-1.352l-.355-.21-3.532.795.81-3.442-.23-.366A9.714 9.714 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg></a>
+    <a href="tel:+27653270980" class="w-14 h-14 rounded-full flex items-center justify-center btn-primary" aria-label="Call Onedays Plumbing Services"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#080C14" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.62 3.38 2 2 0 013.6 1.21h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.8a16 16 0 006.29 6.29l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></a>
   </div>
 
   <script>
-    var toggle = document.getElementById('menu-toggle');
-    var menu = document.getElementById('mobile-menu');
-    var iconOpen = document.getElementById('menu-icon-open');
-    var iconClose = document.getElementById('menu-icon-close');
-    if(toggle && menu){
-      toggle.addEventListener('click', function(){
-        var isOpen = !menu.classList.contains('hidden');
-        menu.classList.toggle('hidden', isOpen);
-        iconOpen.classList.toggle('hidden', !isOpen);
-        iconClose.classList.toggle('hidden', isOpen);
-        toggle.setAttribute('aria-expanded', String(!isOpen));
-      });
-    }
-    var el = document.getElementById('footer-year');
-    if(el) el.textContent = new Date().getFullYear();
+    var t=document.getElementById('menu-toggle'),m=document.getElementById('mobile-menu'),io=document.getElementById('menu-icon-open'),ic=document.getElementById('menu-icon-close');
+    if(t&&m){t.addEventListener('click',function(){var o=!m.classList.contains('hidden');m.classList.toggle('hidden',o);io.classList.toggle('hidden',!o);ic.classList.toggle('hidden',o);t.setAttribute('aria-expanded',String(!o));});}
+    var el=document.getElementById('footer-year');if(el)el.textContent=new Date().getFullYear();
   </script>
 </body>
 </html>
