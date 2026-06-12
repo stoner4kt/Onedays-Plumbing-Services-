@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQs — Onedays Plumbing Services | Cape Town</title>
+  <meta name="description" content="Frequently asked questions about Onedays Plumbing Services — emergency plumbing, certifications, quotes, and more in Cape Town." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.onedaysplumbing.co.za/faq" />
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandDark:'#080C14', brandSurface:'#0E1420', brandCard:'#131926',
+            brandBorder:'#1E2840', brandAccent:'#00C8FF', brandAccent2:'#0099CC',
+            brandMuted:'#8A9AB8', brandText:'#D6E4F7',
+          },
+          fontFamily: { display:['Inter','system-ui','sans-serif'], body:['Inter','system-ui','sans-serif'], mono:['JetBrains Mono','monospace'] },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;}
+    html{background:#080C14;}
+    body{background:#080C14;color:#D6E4F7;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;}
+    .nav-glass{background:rgba(8,12,20,0.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(30,40,64,0.8);}
+    .btn-primary{background:linear-gradient(135deg,#00C8FF 0%,#0099CC 100%);color:#080C14;font-weight:700;transition:all 0.2s ease;box-shadow:0 0 24px rgba(0,200,255,0.25);}
+    .btn-primary:hover{box-shadow:0 0 40px rgba(0,200,255,0.45);transform:translateY(-1px);}
+    .btn-secondary{background:transparent;color:#00C8FF;border:1px solid rgba(0,200,255,0.4);font-weight:600;transition:all 0.2s ease;}
+    .btn-secondary:hover{background:rgba(0,200,255,0.08);border-color:rgba(0,200,255,0.8);}
+    .feature-card{background:#131926;border:1px solid #1E2840;transition:all 0.25s ease;}
+    .glow-line{height:1px;background:linear-gradient(90deg,transparent 0%,#00C8FF 50%,transparent 100%);opacity:0.5;}
+    .section-label{font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#00C8FF;}
+    #mobile-menu{background:rgba(8,12,20,0.98);border-bottom:1px solid #1E2840;}
+    .faq-answer{max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding 0.35s ease;}
+    .faq-item.open .faq-answer{max-height:600px;}
+    .faq-chevron{transition:transform 0.3s ease;}
+    .faq-item.open .faq-chevron{transform:rotate(180deg);}
+    .faq-item{border-bottom:1px solid #1E2840;}
+    .faq-item:last-child{border-bottom:none;}
+    .hero-bg{background-color:#080C14;background-image:linear-gradient(rgba(0,200,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,255,0.04) 1px,transparent 1px);background-size:40px 40px;}
+    .whatsapp-pulse{animation:waPulse 2.5s ease-in-out infinite;}
+    @keyframes waPulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.5);}50%{box-shadow:0 0 0 10px rgba(37,211,102,0);}}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What areas do you service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We service Cape Town and all surrounding suburbs including Claremont, Rondebosch, Kenilworth, Bellville, Paarl, Somerset West, Strand, and the greater Western Cape. Call us to confirm coverage in your area."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer 24/7 emergency call-outs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — Onedays Plumbing offers 24/7 emergency plumbing call-outs, including weekends and public holidays. Our emergency line is answered by a qualified plumber, not an answering service."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can you respond to an emergency?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In most Cape Town suburbs, we aim to have a certified plumber on site within 60 minutes of your call. Response times may vary slightly depending on location and time of day."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide written quotes before starting work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Always. We provide a written quote before any work begins. You approve the price first — no surprises on the invoice. This applies to all jobs, from emergency repairs to full installations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are your plumbers certified and insured?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All our plumbers are PIRB (Plumbing Industry Registration Board) accredited, fully insured, and carry valid certifications. We do not use unverified subcontractors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you handle electrical and painting work too, or just plumbing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — beyond our core plumbing services, Onedays also offers qualified electrical repairs and installations (including CoC certificates) and professional painting services including interior, exterior, and post-repair wall patching."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you issue a Certificate of Compliance (CoC) for geyser and electrical installations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We issue Certificates of Compliance (CoC) for all qualifying geyser and electrical installations. This is a legal requirement and we handle the paperwork on-site."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is your workmanship guarantee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We back all our work with a 12-month workmanship guarantee. If any repair or installation we performed fails within 12 months due to our workmanship or parts we supplied, we'll return and fix it at no cost to you."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I get a quote — do I need to be home for an assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For many jobs, we can provide an estimate over the phone or WhatsApp before visiting. For more complex work such as geyser replacements or bathroom installations, a brief on-site assessment is needed — but someone just needs to give access, they don't need to be present throughout."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What payment methods do you accept?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We accept EFT (electronic bank transfer), cash, and card payments. Payment is typically due on completion of work unless otherwise agreed in writing for larger projects."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="min-h-screen">
+
+  <!-- NAVIGATION -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-glass">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3" aria-label="Onedays Plumbing Home">
+          <img src="assets/logo.jpg" alt="Onedays Plumbing Services logo" class="h-9 w-auto object-contain" />
+        </a>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html#services" class="text-sm text-brandMuted hover:text-brandAccent transition-colors font-medium">Services</a>
+          <a href="index.html#emergency" class="text-sm text-brandMuted hover:text-brandAccent transition-colors font-medium">24/7 Emergency</a>
+          <a href="index.html#testimonials" class="text-sm text-brandMuted hover:text-brandAccent transition-colors font-medium">Reviews</a>
+          <a href="faq.html" class="text-sm text-brandAccent font-medium">FAQs</a>
+          <a href="index.html#contact" class="text-sm text-brandMuted hover:text-brandAccent transition-colors font-medium">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="tel:+27653270980" class="hidden sm:inline-flex items-center gap-2 btn-secondary px-4 py-2 rounded-lg text-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.62 3.38 2 2 0 013.6 1.21h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.8a16 16 0 006.29 6.29l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Call Now
+          </a>
+          <a href="index.html#contact" class="btn-primary px-4 py-2 rounded-lg text-sm hidden md:inline-flex">Get a Free Quote</a>
+          <button id="menu-toggle" class="md:hidden p-2 rounded-lg text-brandMuted hover:text-brandAccent transition-colors" aria-label="Toggle menu" aria-expanded="false">
+            <svg id="menu-icon-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            <svg id="menu-icon-close" class="hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden">
+      <nav class="flex flex-col px-4 py-4 gap-1">
+        <a href="index.html#services" class="mobile-link px-3 py-2.5 rounded-lg text-brandMuted hover:text-brandAccent hover:bg-brandCard text-sm font-medium transition-colors">Services</a>
+        <a href="index.html#emergency" class="mobile-link px-3 py-2.5 rounded-lg text-brandMuted hover:text-brandAccent hover:bg-brandCard text-sm font-medium transition-colors">24/7 Emergency</a>
+        <a href="index.html#testimonials" class="mobile-link px-3 py-2.5 rounded-lg text-brandMuted hover:text-brandAccent hover:bg-brandCard text-sm font-medium transition-colors">Reviews</a>
+        <a href="faq.html" class="mobile-link px-3 py-2.5 rounded-lg text-brandAccent bg-brandCard text-sm font-medium">FAQs</a>
+        <a href="index.html#contact" class="mobile-link px-3 py-2.5 rounded-lg text-brandMuted hover:text-brandAccent hover:bg-brandCard text-sm font-medium transition-colors">Contact</a>
+        <div class="glow-line my-2"></div>
+        <a href="tel:+27653270980" class="btn-secondary px-4 py-2.5 rounded-lg text-sm text-center mt-1">Call Direct: 065 327 0980</a>
+        <a href="index.html#contact" class="btn-primary px-4 py-2.5 rounded-lg text-sm text-center mt-2">Get a Free Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero-bg pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="section-label mb-4">Help Centre</p>
+        <h1 class="font-black text-brandText tracking-tight mb-5" style="font-size:clamp(2rem,5vw,3.5rem);letter-spacing:-0.04em;">
+          Frequently Asked Questions
+        </h1>
+        <p class="text-brandMuted text-lg max-w-xl mx-auto font-light leading-relaxed">
+          Everything you need to know about working with Onedays Plumbing Services. Can't find your answer? <a href="index.html#contact" class="text-brandAccent hover:opacity-80 transition-opacity">Get in touch.</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="py-16 lg:py-24" style="background:#080C14;">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="feature-card rounded-2xl overflow-hidden">
+
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-trigger w-full flex items-center justify-between px-7 py-6 text-left" aria-expanded="false">
+              <span class="font-semibold text-brandText text-base pr-4">What areas do you service?</span>
+              <svg class="faq-chevron flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C8FF" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-brandMuted text-sm leading-relaxed px-7 pb-6">We service Cape Town and all surrounding suburbs — including Claremont, Rondebosch, Kenilworth, Bellville, Paarl, Somerset West, Strand, and throughout the greater Western Cape. Not sure if we cover your area? Give us a call and we'll confirm.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-trigger w-full flex items-center justify-between px-7 py-6 text-left" aria-expanded="false">
+              <span class="font-semibold text-brandText text-base pr-4">Do you offer 24/7 emergency call-outs?</span>
+              <svg class="faq-chevron flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C8FF" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-brandMuted text-sm leading-relaxed px-7 pb-6">Yes — we offer genuine 24/7 emergency plumbing call-outs, including weekends and public holidays. When you call our emergency line, a qualified plumber answers — not a call centre or answering machine.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-trigger w-full flex items-center justify-between px-7 py-6 text-left" aria-expanded="false">
+              <span class="font-semibold text-brandText text-base pr-4">How quickly can you respond to an emergency?</span>
+              <svg class="faq-chevron flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C8FF" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-brandMuted text-sm leading-relaxed px-7 pb-6">In most Cape Town suburbs we aim to be on-site within 60 minutes of your call. Response time may vary slightly depending on your location, time of day, and current call volume — but we always communicate our ETA clearly so you're never left guessing.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-trigger w-full flex items-center justify-between px-7 py-6 text-left" aria-expanded="false">
+              <span class="font-semibold text-brandText text-base pr-4">Do you provide written quotes before starting work?</span>
+              <svg class="faq-chevron flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C8FF" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-brandMuted text-sm leading-relaxed px-7 pb-6">Always. We provide a clear written quote before any work begins. You approve the price in writing first — no tool gets lifted until you're satisfied. This applies to every job, from a quick repair to a full bathroom installation. No surprises on the invoice.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-trigger w-full flex items-center justify-between px-7 py-6 text-left" aria-expanded="false">
+              <span class="font-semibold text-brandText text-base pr-4">Are your plumbers certified and insured?</span>
+              <svg class="faq-chevron flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C8FF" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-brandMuted text-sm leading-relaxed px-7 pb-6">Yes. Every Onedays plumber is PIRB (Plumbing Industry Registration Board) accredited, fully insured, and carries up-to-date certifications. We do not use unverified subcontractors — when you book Onedays, you get Onedays.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button class="faq-trigger w-full flex items-center justify-between px-7 py-6 text-left" aria-expanded="false">
+              <span class="font-semibold text-brandText text-base pr-4">Do you handle electrical and painting work too, or just plumbing?</span>
+              <svg class="faq-chevron flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C8FF" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-brandMuted text-sm leading-relaxed px-7 pb-6">Yes — in addition to our core plumbing services, Onedays also offers qualified electrical repairs and installations (geyser element wiring, plug points, light fittings, DB board inspections, CoC issuing) and professional painting services including interior, exterior, waterproofing, and post-repair wall patching.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-item">
+            <button class="faq-trigger w-full flex items-center justify-between px-7 py-6 text-left" aria-expanded="false">
+              <span class="font-semibold text-brandText text-base pr-4">Do you issue a Certificate of Compliance (CoC) for geyser and electrical installations?</span>
+              <svg class="faq-chevron flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C8FF" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-brandMuted text-sm leading-relaxed px-7 pb-6">Yes. We issue Certificates of Compliance (CoC) for all qualifying geyser replacements and electrical installations. This is a legal requirement in South Africa and we handle the paperwork on-site so you're fully covered.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="faq-item">
+            <button class="faq-trigger w-full flex items-center justify-between px-7 py-6 text-left" aria-expanded="false">
+              <span class="font-semibold text-brandText text-base pr-4">What is your workmanship guarantee?</span>
+              <svg class="faq-chevron flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C8FF" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-brandMuted text-sm leading-relaxed px-7 pb-6">We back all our work with a 12-month workmanship guarantee. If any repair or installation we performed fails within 12 months due to our workmanship or parts we supplied, we return and fix it at zero cost to you. The guarantee covers workmanship and parts installed by Onedays, and excludes damage caused by unrelated factors, third-party work, or pre-existing conditions.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 9 -->
+          <div class="faq-item">
+            <button class="faq-trigger w-full flex items-center justify-between px-7 py-6 text-left" aria-expanded="false">
+              <span class="font-semibold text-brandText text-base pr-4">How can I get a quote — do I need to be home for an assessment?</span>
+              <svg class="faq-chevron flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C8FF" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-brandMuted text-sm leading-relaxed px-7 pb-6">For many standard jobs we can provide an initial estimate over the phone or WhatsApp. For more complex work (geyser installations, bathroom fit-outs), a brief on-site assessment is needed — but you don't need to be present throughout, just provide access. Fill in our quote form online and we'll be in touch within 30 minutes.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 10 -->
+          <div class="faq-item">
+            <button class="faq-trigger w-full flex items-center justify-between px-7 py-6 text-left" aria-expanded="false">
+              <span class="font-semibold text-brandText text-base pr-4">What payment methods do you accept?</span>
+              <svg class="faq-chevron flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C8FF" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-brandMuted text-sm leading-relaxed px-7 pb-6">We accept EFT (electronic bank transfer), cash, and card payments. Payment is due on completion of work unless otherwise agreed in writing for larger projects. We'll always confirm payment terms upfront in your written quote.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-12 text-center">
+          <p class="text-brandMuted text-base mb-6 font-light">Still have a question? We're happy to help.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="index.html#contact" class="btn-primary inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-bold">Get a Free Quote</a>
+            <a href="tel:+27653270980" class="btn-secondary inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.62 3.38 2 2 0 013.6 1.21h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.8a16 16 0 006.29 6.29l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              Call 065 327 0980
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer style="background:#0B0F19;border-top:1px solid #1E2840;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="glow-line mb-8"></div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-brandMuted text-xs">&copy; <span id="footer-year"></span> Onedays Plumbing Services. All rights reserved.</p>
+        <div class="flex gap-5">
+          <a href="index.html" class="text-brandMuted text-xs hover:text-brandAccent transition-colors">Home</a>
+          <a href="privacy.html" class="text-brandMuted text-xs hover:text-brandAccent transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="text-brandMuted text-xs hover:text-brandAccent transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating buttons -->
+  <div class="fixed bottom-5 right-5 z-50 flex flex-col gap-3">
+    <a href="https://wa.me/27653270980" target="_blank" rel="noopener" class="w-14 h-14 rounded-full flex items-center justify-center whatsapp-pulse" style="background:#25D366;" aria-label="Chat on WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.395 5.608L.057 23.552a.75.75 0 00.915.915l5.944-1.338A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.715 9.715 0 01-4.95-1.352l-.355-.21-3.532.795.81-3.442-.23-.366A9.714 9.714 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+    </a>
+    <a href="tel:+27653270980" class="w-14 h-14 rounded-full flex items-center justify-center btn-primary" aria-label="Call Onedays Plumbing">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#080C14" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.62 3.38 2 2 0 013.6 1.21h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.8a16 16 0 006.29 6.29l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    </a>
+  </div>
+
+  <script>
+    // Mobile menu
+    var toggle = document.getElementById('menu-toggle');
+    var menu = document.getElementById('mobile-menu');
+    var iconOpen = document.getElementById('menu-icon-open');
+    var iconClose = document.getElementById('menu-icon-close');
+    if(toggle && menu){
+      toggle.addEventListener('click', function(){
+        var isOpen = !menu.classList.contains('hidden');
+        menu.classList.toggle('hidden', isOpen);
+        iconOpen.classList.toggle('hidden', !isOpen);
+        iconClose.classList.toggle('hidden', isOpen);
+        toggle.setAttribute('aria-expanded', String(!isOpen));
+      });
+    }
+    // FAQ accordion
+    document.querySelectorAll('.faq-item').forEach(function(item){
+      var trigger = item.querySelector('.faq-trigger');
+      if(!trigger) return;
+      trigger.addEventListener('click', function(){
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function(other){
+          other.classList.remove('open');
+          var t = other.querySelector('.faq-trigger');
+          if(t) t.setAttribute('aria-expanded','false');
+        });
+        item.classList.toggle('open', !isOpen);
+        trigger.setAttribute('aria-expanded', String(!isOpen));
+      });
+    });
+    // Footer year
+    var el = document.getElementById('footer-year');
+    if(el) el.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

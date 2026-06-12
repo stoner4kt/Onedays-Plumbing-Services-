@@ -359,7 +359,38 @@
 
 
   /* ─────────────────────────────────────────
-   * 8. INIT ALL
+   * 8. FAQ ACCORDION
+   * ───────────────────────────────────────── */
+  function initFaqAccordion() {
+    var items = document.querySelectorAll('.faq-item');
+    if (!items.length) return;
+
+    items.forEach(function (item) {
+      var trigger = item.querySelector('.faq-trigger');
+      if (!trigger) return;
+
+      trigger.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+
+        // Close all others
+        items.forEach(function (other) {
+          if (other !== item) {
+            other.classList.remove('open');
+            var otherTrigger = other.querySelector('.faq-trigger');
+            if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        // Toggle current
+        item.classList.toggle('open', !isOpen);
+        trigger.setAttribute('aria-expanded', String(!isOpen));
+      });
+    });
+  }
+
+
+  /* ─────────────────────────────────────────
+   * 9. INIT ALL
    * ───────────────────────────────────────── */
   function init() {
     initSmoothScroll();
@@ -369,6 +400,7 @@
     initUrgencySelector();
     initLeadForm();
     initFooterYear();
+    initFaqAccordion();
   }
 
   if (document.readyState === 'loading') {
