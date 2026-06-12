@@ -4,17 +4,41 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.onedaysplumbing.co.za/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Thank-you page (post-form submission) — lower priority, noindex via meta recommended -->
+  <!-- FAQs -->
+  <url>
+    <loc>https://www.onedaysplumbing.co.za/faq</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://www.onedaysplumbing.co.za/privacy</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Terms and Conditions -->
+  <url>
+    <loc>https://www.onedaysplumbing.co.za/terms</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Thank-you page — lower priority, noindex via meta -->
   <url>
     <loc>https://www.onedaysplumbing.co.za/thank-you</loc>
-    <lastmod>2025-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.1</priority>
   </url>
 
 </urlset>
