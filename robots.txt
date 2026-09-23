@@ -8,5 +8,9 @@ Allow: /
 Disallow: /thank-you
 Disallow: /404
 
+# Explicitly allow location pages
+Allow: /bellville
+Allow: /kraaifontein
+
 # Sitemap location
 Sitemap: https://www.onedaysplumbingservices.co.za/sitemap.xml
